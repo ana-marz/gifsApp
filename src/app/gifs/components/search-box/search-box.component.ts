@@ -5,8 +5,7 @@ import { GifsService } from '../../services/gifs.service';
   selector: 'gifs-search-box',
   template: `
   <input type="text" class="form-control" placeholder="buscar gifs..." (keyup.enter)="searchTag()" #txtTagInput>
-  `,
-  styleUrl: './search-box.component.css'
+  `
 })
 export class SearchBoxComponent {
 
