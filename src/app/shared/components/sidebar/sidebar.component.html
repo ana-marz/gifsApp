@@ -2,8 +2,11 @@
   <h3 class="text-light">gifsapp</h3>
   <hr class="text-light">
 
-  <div class="list-group list-reset " *ngFor="let tag of tags">
-    <button class="list-group-item list-group-item-action">
+  <div class="list-group list-reset " >
+    <button
+    *ngFor="let tag of tags"
+    (click)="searchTag(tag)"
+    class="list-group-item list-group-item-action">
      {{tag | uppercase}}
     </button>
   </div>
